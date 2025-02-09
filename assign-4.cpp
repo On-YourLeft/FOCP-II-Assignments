@@ -20,7 +20,18 @@ int main()
 
     int top = 0, bottom = num - 1, left = 0, right = num - 1;
 
-    cout << "Spiral order : ";
+    cout<<endl<<"The matrix : "<<endl<<endl;
+
+    for (int i=0;i<num;i++)
+    {
+        for (int j=0;j<num;j++)
+        {
+            cout<<matra[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    cout << endl << "Spiral order : ";
     while (top <= bottom && left <= right)
     {
         for (int i = left; i <= right; i++)
@@ -54,7 +65,7 @@ int main()
         }
     }
 
-    cout << endl;
+    cout << endl<<endl;
 
     return 0;
 }
